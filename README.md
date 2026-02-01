@@ -25,21 +25,21 @@ The project is built as a modular Rust workspace:
 - **Media Anchoring**: Bi-directional RTP and UDPTL relaying.
 
 ## Installation
-20: 
-21: The easiest way to install Cynan SBC on a Linux server (Debian/Ubuntu/RHEL/CentOS) is using the automated installer.
-22: 
-23: ```bash
-24: sudo ./install.sh
-25: ```
-26: 
-27: This script will:
-28: 1.  Install all system dependencies (OpenSSL, Opus, Clang, PostgreSQL libs).
-29: 2.  Install Rust toolchain (if missing).
-30: 3.  Build the project in Release mode.
-31: 4.  Install binaries to `/opt/cynan/bin`.
-32: 5.  Setup and enable Systemd services (`cynan-sip`, `cynan-api`).
-33: 
-34: ## Access & Deployment
+
+The easiest way to install Cynan SBC on a Linux server (Debian/Ubuntu/RHEL/CentOS) is using the automated installer.
+
+ ```bash
+ sudo ./install.sh
+ ```
+
+This script will:
+1. Install all system dependencies (OpenSSL, Opus, Clang, PostgreSQL libs).
+2. Install Rust toolchain (if missing).
+3. Build the project in Release mode.
+4. Install binaries to `/opt/cynan/bin`.
+5. Setup and enable Systemd services (`cynan-sip`, `cynan-api`).
+ 
+## Access & Deployment
 
 **Cynan SBC** is a proprietary, carrier-grade security appliance. To maintain the integrity of our Post-Quantum Cryptography (PQC) and zero-copy media heuristics, the source code is **Source-Available** but not public.
 
@@ -47,7 +47,7 @@ The project is built as a modular Rust workspace:
 - **Binaries**: Pre-compiled, FIPS-compliant binaries for Ubuntu/RHEL are available for licensed partners.
 - **Source Audit**: Secure source-code access for security auditing purposes (under NDA) can be requested via [Fastcomcorp Support](mailto:support@fastcomcorp.com).
 
-### Quick Launch (Licensed Partners)
+### Quick Launch (Licensed Partners) - Coming Soon
 Licensed users can deploy the SBC using our unified installer script:
 
 ```bash
